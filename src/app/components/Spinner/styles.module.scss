@@ -1,0 +1,38 @@
+@import 'app/styles/variables/colors.scss';
+
+.root {
+    border-radius: 50%;
+    border: solid $COLOR_LIGHTBG_ONSURFACE_400;
+    border-top-color: transparent;
+    animation: rotating 1s linear infinite;
+
+    &_size {
+        &_xs {
+            width: 16px;
+            height: 16px;
+            border-width: 2px;
+        }
+
+        &_l {
+            width: 72px;
+            height: 72px;
+            border-width: 2px;
+        }
+
+        &_xl {
+            width: 96px;
+            height: 96px;
+            border-width: 2px;
+        }
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
