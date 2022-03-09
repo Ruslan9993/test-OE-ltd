@@ -13,6 +13,4 @@ export const getPosts = async() => {
     catch(e) {
         console.log(e)
     }
-    // const posts = await axios.get<IPost[]>('https://jsonplaceholder.typicode.com/posts')
-    // return posts;
 }
